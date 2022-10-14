@@ -6,5 +6,23 @@ public class TryingMethods {
          */
 
     }
+
+    public static void methodA() {
+        
+    }
+
+    public void methodB() {
+        
+    }
+
+    void methodC(){
+
+    }
+
+    void methodD(){
+        
+    }
+
     
+
 }
