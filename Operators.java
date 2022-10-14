@@ -6,14 +6,12 @@ public class Operators{
         valueB+=33;
         int examScore =70;
 
-        if(examScore>=70){
-            System.out.println("You passed with an A");
-        }else if(examScore>=60){
-            System.out.println("You passed with an B");
-        }else{
-            System.out.println("You failed");
+        int sum=0;
+        for(int i=200;i<3000;i++){
+            if(i%2==0){
+                sum+=1;
+            }
         }
-        
-        
+        System.out.println(sum);
     }
 }
