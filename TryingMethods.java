@@ -7,7 +7,8 @@ public class TryingMethods {
          * This class is to explain the use of methods together with different operators and conditionals
          */
 
-    
+
+         System.out.println(methodB());
     }
 
     public static int methodA() {
@@ -22,8 +23,14 @@ public class TryingMethods {
         
     }
 
-    public void methodB() {
-        
+    public static int methodB() {
+        int counter=0;
+        int sum=0;
+        while(counter<1000){
+            sum+=counter;
+            counter+=1;
+        }
+        return sum;
     }
 
     String methodC(int dayOfWeek){
