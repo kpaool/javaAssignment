@@ -1,3 +1,5 @@
+import java.nio.IntBuffer;
+
 public class TryingMethods {
  
     public static void main(String[] args) {
@@ -5,15 +7,32 @@ public class TryingMethods {
          * This class is to explain the use of methods together with different operators and conditionals
          */
 
+
         new TryingMethods().methodD(40);
+
+        System.out.println(methodB());
     }
 
-    public static void methodA() {
+    public static int methodA() {
+        // this method will find the sum of even numbers between 12 and 103
+        int sum=0;
+        for (int i = 13; i < 103; i++) {
+            if(i%2==0){
+                sum+=i;
+            }
+        }
+        return sum;
         
     }
 
-    public void methodB() {
-        
+    public static int methodB() {
+        int counter=0;
+        int sum=0;
+        while(counter<1000){
+            sum+=counter;
+            counter+=1;
+        }
+        return sum;
     }
 
     String methodC(int dayOfWeek){
