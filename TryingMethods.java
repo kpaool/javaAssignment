@@ -1,3 +1,5 @@
+import java.nio.IntBuffer;
+
 public class TryingMethods {
  
     public static void main(String[] args) {
@@ -8,7 +10,15 @@ public class TryingMethods {
     
     }
 
-    public static void methodA() {
+    public static int methodA() {
+        // this method will find the sum of even numbers between 12 and 103
+        int sum=0;
+        for (int i = 13; i < 103; i++) {
+            if(i%2==0){
+                sum+=i;
+            }
+        }
+        return sum;
         
     }
 
