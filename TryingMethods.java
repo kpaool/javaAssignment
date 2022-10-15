@@ -8,7 +8,9 @@ public class TryingMethods {
          */
 
 
-         System.out.println(methodB());
+        new TryingMethods().methodD(40);
+
+        System.out.println(methodB());
     }
 
     public static int methodA() {
@@ -68,7 +70,15 @@ public class TryingMethods {
     }
     
 
-    void methodD(){
+    void methodD(int airTemperature){
+        //this method prints to the console using if conditionals
+        if (airTemperature>50) {
+            System.out.println("You need to cool the green house right now");
+        }else if(airTemperature>30){
+            System.out.println("This is the optimum temperature for the green house");
+        } else {
+            System.out.println("Try and increase the temperature of the green house");
+        }
         
     }
 
