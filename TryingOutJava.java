@@ -3,6 +3,7 @@ public class TryingOutJava {
         printFiveTimes();
         printFirstFiveNumbers();
         printNNaturalNumber(10);
+        System.out.println(factorial(5));
     }
 
     public static void printFiveTimes() {
@@ -26,6 +27,14 @@ public class TryingOutJava {
         while (counter<=n) {
             System.out.println(counter);
             counter++;
+        }
+    }
+
+    public static int factorial(int number) {
+        if (number>1){
+            return number*factorial(number-1);
+        }else{
+            return number;
         }
     }
 }
