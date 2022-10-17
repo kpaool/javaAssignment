@@ -1,4 +1,4 @@
-import java.nio.IntBuffer;
+
 
 public class TryingMethods {
  
@@ -10,7 +10,7 @@ public class TryingMethods {
 
         new TryingMethods().methodD(40);
 
-        System.out.println(methodB());
+        System.out.println("The sum of natural numbers below 1000 is: "+methodB());
     }
 
     public static int methodA() {
@@ -26,6 +26,7 @@ public class TryingMethods {
     }
 
     public static int methodB() {
+        // this method calculates the sum of natural number below 1000
         int counter=0;
         int sum=0;
         while(counter<1000){
