@@ -8,6 +8,7 @@ public class User {
 
 
     User(){
+        
         age=0;
     }
 
